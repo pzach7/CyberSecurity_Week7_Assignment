@@ -7,15 +7,15 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+1. (Required) WordPress <= 4.2 - Unauthenticated Stored Cross-Site Scripting (XSS)
+  - [x] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.1
+  - [x] GIF Walkthrough: <img src='https://i.imgur.com/IOMh75W.gif' title='GIF Walkthrough' width='' alt='GIF Walkthrough' />
+  - [x] Steps to recreate: Find any comment box and add java script in the comment box, such as <script>alert(document.cookie);</script>, and submit comment. Now whenever someone loads that page, the script is run and an alert pops up. This will continue until the comment is removed.
+  - [x] Affected source code:
+    - [Link 1] (https://klikki.fi/adv/wordpress2.html)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
